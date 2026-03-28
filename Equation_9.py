@@ -1,0 +1,13 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.sparse import diags
+from scipy.sparse.linalg import eigsh, spsolve
+from scipy.optimize import brentq
+
+from Helpers import *
+
+def density_eq9(EF, E, Psi, p):
+    kBT = p["kB"] * p["T"]
+    pref = (p["mstar"]*kBT)/(np.pi*p["hbar"]**2)
+    ni = pref * softplus((EF - E)/kBT)  # (nStates,)
+    return (np.abs(Psi)**2) @ ni                # (N,)
