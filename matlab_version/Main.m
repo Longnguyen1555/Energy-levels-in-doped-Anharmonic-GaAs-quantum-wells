@@ -10,8 +10,8 @@ z = linspace(-Ldomain/2.0, Ldomain/2.0, N).';
 % Input data
 Nd_sheet = 0;       % m^-2
 doping_width = 2.0e-9; % 2 nm
-B = 30;                 % Tesla
-F = 0.0;               % V/m
+B = 0;                 % Tesla
+F = 8e6;               % V/m
 
 V0_meV = 228.0;
 beta1 = -2.0;
