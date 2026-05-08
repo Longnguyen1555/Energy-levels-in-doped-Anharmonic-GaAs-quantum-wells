@@ -12,7 +12,7 @@ if __name__ == "__main__":
     Nd_sheet = 1e17           # m^-2
     doping_width = 2.0e-9     # 2 nm
     B = 0                     # Tesla
-    F = 0.0                   # V/m
+    F = 0                   # V/m
 
 
     V0_meV = 228.0
